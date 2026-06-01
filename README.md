@@ -51,26 +51,26 @@ scripts/                       # deploy-managed-agent.sh · check.py · validate
 
 在 Cowork 中，打开 **设置 → 插件 → 添加插件**，然后：
 
-- **粘贴此仓库 URL** — `https://github.com/anthropics/financial-services` — 然后从市场列表中选择您想要的代理和垂直领域，或
+- **粘贴此仓库 URL** — `https://github.com/binbinao/financial-services-cn` — 然后从市场列表中选择您想要的代理和垂直领域，或
 - **上传 zip 文件** — 将 `plugins/` 下的任何目录（例如 `plugins/agent-plugins/pitch-agent/`）压缩并拖入。
 
 ### Claude Code
 
 ```bash
 # 添加市场
-claude plugin marketplace add anthropics/financial-services
+claude plugin marketplace add binbinao/financial-services-cn
 
 # 核心技能 + 连接器（首先安装）
-claude plugin install financial-analysis@claude-for-financial-services
+claude plugin install financial-analysis@binbinao/financial-services-cn
 
 # 命名代理 — 选择您想要的
-claude plugin install pitch-agent@claude-for-financial-services
-claude plugin install gl-reconciler@claude-for-financial-services
-claude plugin install market-researcher@claude-for-financial-services
+claude plugin install pitch-agent@binbinao/financial-services-cn
+claude plugin install gl-reconciler@binbinao/financial-services-cn
+claude plugin install market-researcher@binbinao/financial-services-cn
 
 # 垂直领域技能包
-claude plugin install investment-banking@claude-for-financial-services
-claude plugin install equity-research@claude-for-financial-services
+claude plugin install investment-banking@binbinao/financial-services-cn
+claude plugin install equity-research@binbinao/financial-services-cn
 ```
 
 安装后，代理会出现在 Cowork 调度中，相关技能会自动触发，斜杠命令可在会话中使用（`/comps`、`/dcf`、`/earnings`、`/ic-memo` 等）。
@@ -142,7 +142,7 @@ scripts/deploy-managed-agent.sh gl-reconciler
 它是一个 Claude Code 插件（不是 Cowork 插件），引导 IT 管理员生成自定义插件清单、授予 Azure 管理员同意，并通过 Microsoft Graph 编写每用户路由配置。安装方式：
 
 ```bash
-claude plugin install claude-for-msft-365-install@claude-for-financial-services
+claude plugin install claude-for-msft-365-install@binbinao/financial-services-cn
 /claude-for-msft-365-install:setup
 ```
 
