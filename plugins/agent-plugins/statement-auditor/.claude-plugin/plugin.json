@@ -1,0 +1,8 @@
+{
+  "name": "statement-auditor",
+  "version": "0.1.0",
+  "description": "审计分发前的 LP 报表",
+  "author": {
+    "name": "Anthropic FSI"
+  }
+}

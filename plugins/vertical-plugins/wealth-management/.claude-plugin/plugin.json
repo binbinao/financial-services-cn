@@ -1,0 +1,8 @@
+{
+  "name": "wealth-management",
+  "version": "0.1.2",
+  "description": "财富管理和财务顾问工具：客户回顾、财务计划、组合分析和客户报告",
+  "author": {
+    "name": "Anthropic FSI"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "investment-banking",
+  "version": "0.2.1",
+  "description": "投资银行生产力工具：客户和市场洞察、PPT 制作、财务分析和交易管理",
+  "author": {
+    "name": "Anthropic"
+  }
+}

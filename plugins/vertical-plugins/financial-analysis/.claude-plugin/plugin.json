@@ -1,0 +1,8 @@
+{
+  "name": "financial-analysis",
+  "version": "0.1.1",
+  "description": "核心财务建模和分析工具：DCF、可比公司分析、LBO、三表模型、竞争分析和 PPT 质检",
+  "author": {
+    "name": "Anthropic FSI"
+  }
+}

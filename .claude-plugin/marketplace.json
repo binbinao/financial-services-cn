@@ -1,0 +1,128 @@
+{
+  "name": "claude-for-financial-services",
+  "owner": {
+    "name": "Matt Piccolella"
+  },
+  "plugins": [
+    {
+      "name": "financial-analysis",
+      "displayName": "财务分析",
+      "source": "./plugins/vertical-plugins/financial-analysis",
+      "description": "核心财务建模和分析工具：DCF、可比公司分析、LBO、三表模型、竞争分析和 PPT 质检"
+    },
+    {
+      "name": "investment-banking",
+      "displayName": "投资银行",
+      "source": "./plugins/vertical-plugins/investment-banking",
+      "description": "投资银行生产力工具 — 客户和市场洞察、PPT 制作、财务分析和交易管理"
+    },
+    {
+      "name": "equity-research",
+      "displayName": "股票研究",
+      "source": "./plugins/vertical-plugins/equity-research",
+      "description": "股票研究工具：财报分析、首次覆盖报告和研究工作流程"
+    },
+    {
+      "name": "private-equity",
+      "displayName": "私募股权",
+      "source": "./plugins/vertical-plugins/private-equity",
+      "description": "私募股权交易来源和工作流程工具：公司发现、CRM 集成和创始人联系"
+    },
+    {
+      "name": "wealth-management",
+      "displayName": "财富管理",
+      "source": "./plugins/vertical-plugins/wealth-management",
+      "description": "财富管理和财务顾问工具：客户回顾、财务计划、组合分析和客户报告"
+    },
+    {
+      "name": "fund-admin",
+      "displayName": "基金行政",
+      "source": "./plugins/vertical-plugins/fund-admin",
+      "description": "基金行政和财务运营：GL 对账、差异追溯、预提、滚动、差异分析、NAV 勾稽"
+    },
+    {
+      "name": "operations",
+      "displayName": "运营",
+      "source": "./plugins/vertical-plugins/operations",
+      "description": "运营工作流程：KYC 文档解析和规则网格评估"
+    },
+    {
+      "name": "pitch-agent",
+      "displayName": "推介代理",
+      "source": "./plugins/agent-plugins/pitch-agent",
+      "description": "从可比公司分析、先例、LBO 到品牌推介材料，端到端"
+    },
+    {
+      "name": "market-researcher",
+      "displayName": "市场研究员",
+      "source": "./plugins/agent-plugins/market-researcher",
+      "description": "行业或主题到行业概览、竞争格局、可比公司和创意清单"
+    },
+    {
+      "name": "earnings-reviewer",
+      "displayName": "财报审核代理",
+      "source": "./plugins/agent-plugins/earnings-reviewer",
+      "description": "从财报电话会议和文件到模型更新再到笔记草稿"
+    },
+    {
+      "name": "meeting-prep-agent",
+      "displayName": "会议准备代理",
+      "source": "./plugins/agent-plugins/meeting-prep-agent",
+      "description": "每次客户会议前的简报包"
+    },
+    {
+      "name": "model-builder",
+      "displayName": "模型构建器",
+      "source": "./plugins/agent-plugins/model-builder",
+      "description": "DCF、LBO、三表、可比公司分析 — 实时在 Excel 中操作"
+    },
+    {
+      "name": "gl-reconciler",
+      "displayName": "GL 对账员",
+      "source": "./plugins/agent-plugins/gl-reconciler",
+      "description": "查找差异、追溯根本原因、提交审批"
+    },
+    {
+      "name": "kyc-screener",
+      "displayName": "KYC 筛查代理",
+      "source": "./plugins/agent-plugins/kyc-screener",
+      "description": "解析入职文档、运行规则引擎、标记差距"
+    },
+    {
+      "name": "valuation-reviewer",
+      "displayName": "估值审核代理",
+      "source": "./plugins/agent-plugins/valuation-reviewer",
+      "description": "提取 GP 包、运行估值模板、准备 LP 报告"
+    },
+    {
+      "name": "month-end-closer",
+      "displayName": "月末结账代理",
+      "source": "./plugins/agent-plugins/month-end-closer",
+      "description": "预提、滚动、差异分析"
+    },
+    {
+      "name": "statement-auditor",
+      "displayName": "报表审计代理",
+      "source": "./plugins/agent-plugins/statement-auditor",
+      "description": "审计分发前的 LP 报表"
+    },
+    {
+      "name": "lseg",
+      "displayName": "LSEG",
+      "source": "./plugins/partner-built/lseg",
+      "description": "使用 LSEG 金融数据和进行分析：对债券定价、分析收益率曲线、评估 FX Carry 交易、期权估值和构建宏观仪表板"
+    },
+    {
+      "name": "sp-global",
+      "displayName": "S&P Global",
+      "source": "./plugins/partner-built/spglobal",
+      "description": "S&P Global — 金融数据和数据分析技能，包括公司简报、财报预览和交易摘要"
+    },
+    {
+      "name": "claude-for-msft-365-install",
+      "displayName": "Microsoft 365 版 Claude 安装工具",
+      "source": "./claude-for-msft-365-install",
+      "description": "为 Claude Microsoft 365 插件配置直接云访问（Vertex AI、Bedrock 或 LLM 网关）。生成自定义清单、引导完成 Azure 管理员同意，并通过 Graph 扩展属性编写每用户配置。"
+    }
+  ]
+}

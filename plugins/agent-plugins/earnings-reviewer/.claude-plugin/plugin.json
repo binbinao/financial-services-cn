@@ -1,0 +1,8 @@
+{
+  "name": "earnings-reviewer",
+  "version": "0.1.1",
+  "description": "从财报电话会议和文件到模型更新再到笔记草稿",
+  "author": {
+    "name": "Anthropic FSI"
+  }
+}

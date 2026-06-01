@@ -1,0 +1,8 @@
+{
+  "name": "meeting-prep-agent",
+  "version": "0.1.1",
+  "description": "每次客户会议前的简报包",
+  "author": {
+    "name": "Anthropic FSI"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "month-end-closer",
+  "version": "0.1.0",
+  "description": "预提、滚动、差异分析",
+  "author": {
+    "name": "Anthropic FSI"
+  }
+}

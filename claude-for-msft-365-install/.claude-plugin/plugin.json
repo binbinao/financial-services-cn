@@ -1,0 +1,9 @@
+{
+  "name": "claude-for-msft-365-install",
+  "description": "为 Claude Office 插件配置直接云访问（Vertex AI、Bedrock 或 LLM 网关）。生成自定义插件清单、引导完成 Azure 管理员同意，并通过 Microsoft Graph 扩展属性编写每用户配置。",
+  "version": "0.1.4",
+  "author": {
+    "name": "Anthropic",
+    "email": "support@anthropic.com"
+  }
+}

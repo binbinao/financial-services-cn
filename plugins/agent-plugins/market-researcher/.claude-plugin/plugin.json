@@ -1,0 +1,8 @@
+{
+  "name": "market-researcher",
+  "version": "0.1.1",
+  "description": "行业或主题到行业概览、竞争格局、可比公司和创意清单",
+  "author": {
+    "name": "Anthropic FSI"
+  }
+}

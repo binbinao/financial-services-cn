@@ -1,0 +1,8 @@
+{
+  "name": "lseg",
+  "version": "1.0.0",
+  "description": "使用 LSEG 金融数据和进行分析：对债券定价、分析收益率曲线、评估 FX Carry 交易、期权估值和构建宏观仪表板",
+  "author": {
+    "name": "LSEG"
+  }
+}

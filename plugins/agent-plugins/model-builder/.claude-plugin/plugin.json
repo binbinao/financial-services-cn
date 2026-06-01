@@ -1,0 +1,8 @@
+{
+  "name": "model-builder",
+  "version": "0.1.0",
+  "description": "DCF、LBO、三表、可比公司分析 — 实时在 Excel 中操作",
+  "author": {
+    "name": "Anthropic FSI"
+  }
+}
