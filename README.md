@@ -56,21 +56,35 @@ scripts/                       # deploy-managed-agent.sh · check.py · validate
 
 ### Claude Code
 
+> [!NOTE]
+> 如果需要使用此 fork 而非官方市场，请先确保 `.claude-plugin/marketplace.json` 中的 `name` 不是 "claude-for-financial-services"（已配置为 `binbinao-financial-services-cn`）。
+
 ```bash
-# 添加市场
-claude plugin marketplace add binbinao/financial-services-cn
+# 添加市场（支持本地路径、GitHub URL 或 GitHub repo）
+claude plugin marketplace add /Users/jiduobin/Documents/GitHub/financial-services-cn
 
 # 核心技能 + 连接器（首先安装）
-claude plugin install financial-analysis@binbinao/financial-services-cn
+claude plugin install financial-analysis@binbinao-financial-services-cn
 
 # 命名代理 — 选择您想要的
-claude plugin install pitch-agent@binbinao/financial-services-cn
-claude plugin install gl-reconciler@binbinao/financial-services-cn
-claude plugin install market-researcher@binbinao/financial-services-cn
+claude plugin install pitch-agent@binbinao-financial-services-cn
+claude plugin install gl-reconciler@binbinao-financial-services-cn
+claude plugin install market-researcher@binbinao-financial-services-cn
 
 # 垂直领域技能包
-claude plugin install investment-banking@binbinao/financial-services-cn
-claude plugin install equity-research@binbinao/financial-services-cn
+claude plugin install investment-banking@binbinao-financial-services-cn
+claude plugin install equity-research@binbinao-financial-services-cn
+```
+
+> **提示：** 如果你 fork 后推送到自己的 GitHub 仓库，请将 `.claude-plugin/marketplace.json` 中的 `name` 改为唯一名称（如 `yourname-fsi-cn`），以避免与官方市场冲突。
+
+**使用官方市场（如果不需要自定义）**
+
+如果你不需要自定义，直接使用官方市场更简单：
+
+```bash
+claude plugin install financial-analysis@claude-for-financial-services
+# ...其他插件
 ```
 
 安装后，代理会出现在 Cowork 调度中，相关技能会自动触发，斜杠命令可在会话中使用（`/comps`、`/dcf`、`/earnings`、`/ic-memo` 等）。
